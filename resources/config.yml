@@ -20,35 +20,37 @@ quest-finished: "§6Completed"
 categories:
   General: # Category Name
     cuttree: # Quest Name (config only)
-      name: "Example 1" # Quest Name (in-game)
-      description: "Break 5 wood" # Description
+      name: "Cut Tree" # Quest Name (in-game)
+      description: "Get 64 Oak Wood by Breaking Trees" # Description
       type: breakblock # Type
       block: "17" # Block they need to break/place/etc
-      number: 5 # Number of blocks they need to break/place/etc
+      number: 64 # Number of blocks they need to break/place/etc
       rewards: # Rewards are given by commands, you can give anything rank by a command
-        - "give {PLAYER} dirt 64"
+        - "givemoney {PLAYER} 500"
         - "say {PLAYER} just finished a quest"
     voyager: # Second Quest under General Category, you can add unlimited
-      name: "Example 2"
-      description: "Move 100 blocks"
+      name: "Explorer"
+      description: "Move 10000 blocks away from Spawn"
       type: move
-      number: 100
+      number: 10000
       rewards:
         - "give {PLAYER} steak 64"
+        - "givemoney {PLAYER} 1000
   Others: # Second Category, however you can add unlimited
-    example3:
-      name: "Example 3"
-      description: "Place 5 wood"
+    Diamond:
+      name: "Diamond Blocks"
+      description: "Place 2 Diamond Blocks"
       type: placeblock
-      block: "17"
-      number: 5
+      block: "57"
+      number: 2
       rewards:
-        - "give {PLAYER} dirt 64"
+        - "givemoney {PLAYER} 5000"
     killeveryone:
-      name: "Example 4"
+      name: "Killer"
       description: "Kill 5 players"
       type: kills
       number: 5
       rewards:
-        - "give {PLAYER} diamond 1"
+        - "give {PLAYER} diamond 3"
+        - "givemoney {PLAYER} 5000
 ...
